@@ -1,0 +1,150 @@
+.contacts 
+    background: #232323
+    padding: 120px 0
+    overflow: hidden
+    &__box  
+        display: flex
+        justify-content: space-between
+        position: relative
+    &__item 
+        flex: 0 1 50%
+        position: relative
+        z-index: 3
+    &__wrap 
+    &__title 
+        font-size: 55px
+        line-height: 55px
+        color: #fff
+    &__form 
+    &__rectangle 
+        position: absolute  
+        &_b
+            top: -350px
+            left: -350px
+            width: 746px
+            height: 598px
+            background: linear-gradient(12.08deg, #F101BF 50%, #0066FF 50%)
+            opacity: 0.3
+            filter: blur(150px)
+            border-radius: 373.431px
+            transform: rotate(-122.79deg)
+        &_m 
+            bottom: -300px
+            right: 50px
+            width: 472px
+            height: 478px
+            background: linear-gradient(12.08deg, #F101BF 50%, #0066FF 50%)
+            opacity: 0.3
+            filter: blur(150px)
+            border-radius: 236.048px
+            transform: rotate(5.78deg)
+    @media screen and (max-width: 1014px)
+        padding: 40px 0
+        &__title 
+            font-size: 34px
+            line-height: 40px
+    @media screen and (max-width: 768px)
+        &__box 
+            display: block
+        &__title 
+            padding-bottom: 48px
+        &__rectangle 
+            position: absolute 
+            opacity: 0.2 
+            &_b
+                top: -350px
+                right: -350px
+                left: auto
+            &_m 
+                top: -100px
+                left: -300px
+                right: auto
+
+
+.form 
+    width: 100%
+    height: 100%
+    &__title
+        color: #fff 
+        font-size: 28px 
+        padding-bottom: 28px
+    &__box 
+        @media screen and (min-width: 767px)
+            display: flex
+            > .form__item
+                flex: 0 1 50%
+                &:nth-child(1)
+                    padding-right: 20px
+                
+    &__item 
+        padding-bottom: 28px
+        display: flex
+        flex-direction: column
+    &__label
+        +pn600
+        font-size: 13px
+        line-height: 18px
+        color: #fff
+        padding-bottom: 8px
+        &.error
+            color: #9d4141
+    &__input
+        +r500
+        font-size: 14px
+        line-height: 18px
+        color: #000000
+        background: #FFFFFF
+        border: 1px solid #D2D6DA
+        border-radius: 8px
+        padding: 9px 13px 
+        &:placeholder
+            font-size: 14px
+            line-height: 7px
+            color: #3D3D3D
+        &.error
+            border: 1px solid #9d4141
+            color: #9d4141
+            background: #d39e9e
+            &::placeholder
+                color: #9d4141
+    &__textarea 
+        +r500
+        font-size: 14px
+        line-height: 18px
+        color: #000000
+        background: #FFFFFF
+        border: 1px solid #D2D6DA
+        border-radius: 8px
+        padding: 15px 13px 
+        height: 100px
+        &:placeholder
+            font-size: 14px
+            line-height: 7px
+            color: #3D3D3D
+        &.error
+            border: 1px solid #9d4141
+            color: #9d4141
+            background: #d39e9e
+            &::placeholder
+                color: #9d4141
+    &__button 
+        max-width: 200px
+        font-size: 14px
+        line-height: 18px
+        color: #fff
+        padding: 17px 82px
+        background: #FF8B00
+        border-radius: 4px
+        transition: all 0.3s ease 0s
+        &:hover
+            background: #fd7b02
+    @media screen and (max-width: 1014px)
+        &__title
+            font-size: 20px
+        &__item 
+            padding-bottom: 20px
+    @media screen and (max-width: 768px)
+        &__item_btn
+            align-items: center
+
+

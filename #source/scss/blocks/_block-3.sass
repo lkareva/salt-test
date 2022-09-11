@@ -1,0 +1,60 @@
+.do
+    padding: 120px 0
+    background: #F8F8F8
+    &__title
+        font-size: 60px
+        line-height: 72px
+        color: #7050E5
+        text-align: end
+        padding-right: 65px
+        padding-top: 25px
+        padding-bottom: 68px
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            width: 34px
+            height: 34px
+            border-top: 12px solid #FF8B00
+            border-right: 12px solid #FF8B00
+
+    &__box
+        display: flex
+        flex-wrap: wrap
+    &__item
+        flex: 0 1 33.333%
+        padding: 50px
+    &__wrap
+    &__img
+        text-align: center
+        padding-bottom: 28px
+    &__subtitle
+        font-size: 18px
+        line-height: 20px
+        text-transform: uppercase
+        color: #7050E5
+        padding-bottom: 8px
+    &__text
+        +pn400
+        font-size: 15px
+        line-height: 19px
+        color: #878787
+    @media screen and (max-width: 1014px)
+        padding: 48px 0
+        &__title
+            font-size: 34px
+            padding-bottom: 40px
+        &__subtitle
+            padding-bottom: 16px
+        &__box
+            margin: -30px 0
+        &__item
+            padding: 30px 24px
+    @media screen and (max-width: 859px)
+        &__item
+            flex: 0 1 50%
+    @media screen and (max-width: 640px)
+        &__item
+            flex: 0 1 100%

@@ -1,0 +1,194 @@
+.footer
+    margin-top: 97px
+    &__main
+        position: relative
+        background: #363636
+        padding: 56px 0
+    &__copyright
+        background: #252525
+        padding: 5px 0
+        text-align: center
+        span
+            +r500
+            font-size: 10px
+            line-height: 20px
+            text-transform: uppercase
+            color: #fff
+    @media screen and (max-width: 768px)
+        &__copyright
+            padding: 38px
+            span
+                opacity: 0.5
+    &__box
+        display: flex
+        justify-content: space-between
+    &__nav 
+    &__menu 
+        display: flex
+    &__item 
+        padding-right: 132px
+        &:last-child
+            padding-right: 0
+    &__tit-orange
+        padding-bottom: 16px
+    &__ul
+    &__li 
+        +pn600
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #fff
+        padding: 4px 0
+        a 
+            +pn600
+            font-size: 14px
+            line-height: 20px
+            text-transform: uppercase
+            color: #fff
+            &:hover
+                text-decoration: underline
+    
+    &__a-contacts
+        padding-left: 20px
+    &__contacts 
+    &__logo 
+        @media screen and (min-width: 767px)
+            position: absolute
+            right: 32px
+            bottom: 32px
+    @media screen and (max-width:1200px)
+        &__item 
+            padding-right: 50px
+            &:last-child
+                padding-right: 0
+    @media screen and (max-width:1014px)
+        &__menu
+            margin: -20px -20px -20px 0
+            flex-wrap: wrap
+        &__item 
+            padding: 20px
+            &:last-child
+                padding-right: 20px
+        &__tit-orange
+            padding-bottom: 19px
+        &__ul
+        &__li 
+            line-height: 18px
+            padding: 3px 0
+            a 
+                line-height: 18px
+    @media screen and (max-width:768px)
+        &__menu
+            margin: 35px -20px
+            justify-content: center
+            
+        &__box
+            flex-direction: column
+            align-items: center
+    @media screen and (max-width:668px)
+        &__item 
+            &:last-child
+                .tit-orange
+                    justify-content: center
+
+
+.tit-orange
+    display: flex
+    align-items: center
+    &__text
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #FF8B00
+        padding-left: 8.5px
+
+.hexagon-m
+    display: inline-block
+    position: relative
+    height: 20px
+    width: 17.5px
+    span 
+        opacity: 1
+        position: absolute
+        top: calc(50% - 5px)
+        left: 0
+        display: block
+        height: 10px
+        width: 17.5px
+        background: #FF8B00
+        &:nth-child(2)
+            transform: rotate(60deg)
+        &:nth-child(3)
+            transform: rotate(-60deg)
+
+.hexagon-sm
+    display: inline-block
+    position: relative
+    height: 10px
+    width: 9px
+    span 
+        opacity: 1
+        position: absolute
+        top: calc(50% - 2.5px)
+        left: 0
+        display: block
+        height: 5px
+        width: 9px
+        background: #FF8B00
+        &:nth-child(2)
+            transform: rotate(60deg)
+        &:nth-child(3)
+            transform: rotate(-60deg)
+
+.panel
+    position: relative
+    &__heading
+        background: #7050E5
+        position: absolute
+        top: 0
+        left: 0
+        width: 299px
+        height: 60px
+        display: flex
+        align-items: center
+    &__icon
+        flex: 0 0 59px
+        height: 100%
+        background: #5634D1
+        display: flex 
+        justify-content: center
+        align-items: center
+        & > div 
+            width: 36px
+            height: 36px
+            border: 1.5px solid #FFFFFF
+            border-radius: 50%
+            display: flex 
+            justify-content: center
+            align-items: center
+    &__author
+        padding-left: 16px
+    &__title
+        +pn600
+        font-size: 22px
+        line-height: 18px
+        color: #fff
+        padding-bottom: 2px
+    &__notice
+        +pn400
+        font-size: 14px
+        line-height: 18px
+        color: #fff
+    &__body
+        overflow: hidden
+        width: 299px
+        height: 295px
+        display: flex
+        justify-content: center
+        .twitter-timeline
+
+.fa-twitter
+    color: #fff
+
+
+

@@ -1,0 +1,295 @@
+.header
+    position: relative
+    &__wrap
+        background: url(../img/header/polygon-bg.png) #7050e5 100% 100%/cover no-repeat
+    &__triangle
+        position: absolute
+        bottom: -1px
+        width: 0
+        height: 0
+        border-bottom: 250px solid #fff
+        &_right
+            right: 0
+            border-left: 50vw solid transparent
+        &_left
+            left: 0
+            border-right: 50vw solid transparent
+    &__menu
+        padding: 32px 0
+
+    &__main
+        position: relative
+    &__slider-dots
+        position: absolute
+        top: calc(50% - 40px)
+        right: -40px
+    &__scroll
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 50px 0
+    @media screen and (max-width: 1300px)
+        &__slider-dots
+            right: 0
+        &__triangle
+            border-bottom: 200px solid #fff
+    @media screen and (max-width: 1014px)
+        &__triangle
+            border-bottom: 150px solid #fff
+    @media screen and (max-width: 768px)
+        &__menu
+            padding: 28px 0
+    @media screen and (max-width: 658px)
+        &__triangle
+            border-bottom: 70px solid #fff
+
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__body
+
+    &__logo
+        display: block
+        width: 78px
+        position: relative
+        z-index: 10
+        img
+            width: 100%
+
+    &__burger
+        display: none
+    &__menu
+
+    &__list
+        display: flex
+        margin: 0 -14px
+        li
+            padding: 0 14px
+    &__link
+        +pn700
+        font-size: 15px
+        line-height: 18px
+        color: #fff
+        position: relative
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: -8px
+            width: 0
+            height: 3px
+            background: #FF8B00
+            transition: width 0.3s ease-out
+        &:hover:after
+            width: 100%
+    @media screen and (max-width: 768px)
+        &__logo
+            max-width: 39px
+            z-index: 1001
+        &__burger
+            display: block
+            position: relative
+            width: 27.2px
+            height: 22px
+            z-index: 1001
+            span
+                background: #fff
+                position: absolute
+                width: 100%
+                height: 2.6px
+                border-radius: 5px
+                left: 0
+                top: 9.4px
+                transition: all 0.3s ease 0s
+            &::before, &::after
+                background: #fff
+                content: ""
+                position: absolute
+                width: 100%
+                height: 2.6px
+                border-radius: 5px
+                left: 0
+                transition: all 0.3s ease 0s
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+            &.active span
+                transform: scale(0)
+            &.active::before
+                transform: rotate(45deg)
+                top: 9.4px
+            &.active::after
+                transform: rotate(-45deg)
+                bottom: 9.4px
+
+        &__menu
+            position: fixed
+            z-index: 1000
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background: #7050e5
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: all 0.3s ease 0s
+            &.active
+                top: 0
+        &__list
+            display: block
+            margin: 0
+        li
+            padding: 10px 0px
+
+.slide
+    padding: 78px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: stretch
+    &__content
+        max-width: 552px
+    &__title
+        font-size: 55px
+        line-height: 55px
+        color: #fff
+        padding-bottom: 12px
+    &__description
+        +pn600
+        font-size: 16px
+        line-height: 30px
+        color: #fff
+        padding-bottom: 44px
+    &__btn
+        font-size: 14px
+        line-height: 45px
+        color: #fff
+        padding: 4px 40px
+        background: #FF8B00
+        border-radius: 4px
+        transition: all 0.3s ease 0s
+        &:hover
+            background: #fd7b02
+    &__img
+        flex: 0 1 30%
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 150px
+            object-fit: contain
+            object-position: center
+    @media screen and (max-width: 1014px)
+        padding: 20px 30px 20px 2px
+        &__title
+            font-size: 32px
+            line-height: 40px
+        &__description
+            line-height: 20px
+            padding-bottom: 28px
+    @media screen and (max-width: 768px)
+        &__wrap
+            flex-direction: column-reverse
+        &__img
+            padding-bottom: 64px
+            img
+                width: 100px
+
+.hexagon
+    position: relative
+    height: 71px
+    width: 62px
+    span
+        position: absolute
+        top: calc(50% - 17.75px)
+        left: 0
+        display: block
+        height: 35.5px
+        width: 62px
+        border-left: 3px solid #FF8B00
+        border-right: 3px solid #FF8B00
+        &:nth-child(2)
+            transform: rotate(60deg)
+        &:nth-child(3)
+            transform: rotate(-60deg)
+    &__arrow
+        span
+            position: absolute
+            top: 50%
+            left: calc(50% - 2px)
+            width: 18px
+            height: 3px
+            background: #FF8B00
+            border-radius: 4px
+            transition: all 0.6s ease 0s
+            &:nth-child(1)
+                transform: rotate(40deg)
+                left: calc(50% - 14px)
+            &:nth-child(2)
+                transform: rotate(-40deg)
+    &:hover &__arrow span
+        animation: scroll-arrow 1s linear infinite alternate
+
+@keyframes scroll-arrow
+    0%
+        top: 50%
+    50%
+        top: calc(50% + 2px)
+    100%
+        top: 50%
+
+.dots-hexagon
+    margin: -24px 0
+    li
+        position: relative
+        margin: 24px 0
+        height: 11px
+        width: 19px
+        border-left: 1.7px solid #fff
+        border-right: 1.7px solid #fff
+        cursor: pointer
+        &::before, &::after
+            content: ""
+            position: absolute
+            top: 0
+            left: -1.7px
+            display: block
+            height: 11px
+            width: 15.6px
+            border-left: 1.7px solid #fff
+            border-right: 1.7px solid #fff
+        &::before
+            transform: rotate(60deg)
+        &::after
+            transform: rotate(-60deg)
+    button
+        opacity: 0
+    li.slick-active
+        background: #FF8B00
+        border-left: 1.7px solid #FF8B00
+        border-right: 1.7px solid #FF8B00
+        &::before, &::after
+            background: #FF8B00
+            border-left: 1.7px solid #FF8B00
+            border-right: 1.7px solid #FF8B00
+
+.scroll
+    position: relative
+    z-index: 2
+    cursor: pointer
+    &__text
+        font-size: 15px
+        line-height: 20px
+        color: #fff
+        padding-bottom: 19px
+    &__hexagon
+    @media screen and (max-width: 1014px)
+        &__text
+            font-size: 13px

@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url(../fonts/proxima-nova/ProximaNova-Bold.eot);
+    src: url(../fonts/proxima-nova/ProximaNova-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/proxima-nova/ProximaNova-Bold.woff2) format('woff2'),
+        url(../fonts/proxima-nova/ProximaNova-Bold.woff) format('woff'),
+        url(../fonts/proxima-nova/ProximaNova-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url(../fonts/proxima-nova/ProximaNova-Regular.eot);
+    src: url(../fonts/proxima-nova/ProximaNova-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/proxima-nova/ProximaNova-Regular.woff2) format('woff2'),
+        url(../fonts/proxima-nova/ProximaNova-Regular.woff) format('woff'),
+        url(../fonts/proxima-nova/ProximaNova-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url(../fonts/proxima-nova/ProximaNova-Semibold.eot);
+    src: url(../fonts/proxima-nova/ProximaNova-Semibold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/proxima-nova/ProximaNova-Semibold.woff2) format('woff2'),
+        url(../fonts/proxima-nova/ProximaNova-Semibold.woff) format('woff'),
+        url(../fonts/proxima-nova/ProximaNova-Semibold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/gilroy/Gilroy-Bold.eot);
+    src: url(../fonts/gilroy/Gilroy-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/gilroy/Gilroy-Bold.woff2) format('woff2'),
+        url(../fonts/gilroy/Gilroy-Bold.woff) format('woff'),
+        url(../fonts/gilroy/Gilroy-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-Medium.eot);
+    src: url(../fonts/raleway/Raleway-Medium.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/raleway/Raleway-Medium.woff2) format('woff2'),
+        url(../fonts/raleway/Raleway-Medium.woff) format('woff'),
+        url(../fonts/raleway/Raleway-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-SemiBold.eot);
+    src: url(../fonts/raleway/Raleway-SemiBold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/raleway/Raleway-SemiBold.woff2) format('woff2'),
+        url(../fonts/raleway/Raleway-SemiBold.woff) format('woff'),
+        url(../fonts/raleway/Raleway-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-ExtraBold.eot);
+    src: url(../fonts/raleway/Raleway-ExtraBold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/raleway/Raleway-ExtraBold.woff2) format('woff2'),
+        url(../fonts/raleway/Raleway-ExtraBold.woff) format('woff'),
+        url(../fonts/raleway/Raleway-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@mixin pn700 {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: bold;
+}
+@mixin pn600 {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 600;
+}
+@mixin pn400 {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+}
+
+@mixin r500 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+@mixin r600 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+@mixin r800 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+@mixin g700 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+}
