@@ -12,7 +12,7 @@ $(document).ready(function() {
 $(document).ready(function () {
     $('.slider').slick({
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2600,
         speed: 800,
         slidesToShow: 1,
